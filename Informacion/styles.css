@@ -1,0 +1,195 @@
+body{
+    background-image: url('../iconos/montanas-minimalista-degradado-azul_3840x2160_xtrafondos.com.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+    display: flex;
+}
+
+
+.logo{
+    margin: auto;
+    margin-top: 5px;
+    width: 80vw;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #000;
+    border-radius: 10px;
+    border: solid 2px #000;
+    text-decoration: none;
+}
+
+.logo:hover{
+    margin: auto;
+    margin-top: 5px;
+    width: 80vw;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #61ee59b0;
+    border-radius: 10px;
+    border: solid 2px #000;
+}
+
+
+
+.logo-img{
+    position: relative;
+    top: 2px;
+    height: 40px;
+    border-radius: 25px;
+    border: solid 1px #fff;
+    margin: 5px;
+}
+
+.logo-titulo{
+    position: relative;
+    top: -4px;
+    color: #fff;
+    font-size: 24px;
+    font-family: cursive;
+    text-decoration: none;
+
+}
+
+
+.caja-publicidad{
+    text-align: center;
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 80vh;
+    width: 30vw;
+    background-color: #111b;
+}
+
+.publicidad-titulo{
+    
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin: 5px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.caja--publicidad{
+    text-align: center;
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 72vh;
+    width: 28vw;
+    background-color: #1118;
+}
+
+.caja-informacion{
+    border: solid 2px #00ffff;
+    overflow: auto;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 80vh;
+    width: 30vw;
+    background-color: #111b;
+}
+
+.caja-informacion::-webkit-scrollbar{
+    display: none;
+}
+
+.juego-titulo{
+    background-color: #00ffff;
+    font-family: cursive;
+    font-size: 19px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.portada{
+    position: relative;
+    left: 7vw;
+    margin: 5px ;
+    height: 35vh;
+    width: 14.7vw;
+    border-radius: 10px;
+    border: solid 2px #00ffff;
+}
+
+
+.descargar{
+    background-color:#61ee59b0;
+    border-radius: 10px;
+    margin: 5px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 5px;
+}
+
+.descripcion{
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #fff;
+    margin: 10px;
+}
+
+.caja-requisitos{
+    overflow-y: auto;
+    border: solid 2px #00ffff;
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 80vh;
+    width: 30vw;
+    background-color: #111b;
+
+}
+
+
+.caja-requisitos::-webkit-scrollbar{
+    display: none;
+}
+
+
+.requisitos-titulo{
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 28vw;
+}
+
+
+.requisitos{
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #fff;
+    margin: 10px;
+}
+
+
+span{
+    background-color: #00ffff;
+    color: #000;
+    font-size: 17px;
+    border-radius: 10px;
+}

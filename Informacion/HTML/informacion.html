@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="titulo-pagina">Cargando...</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../../iconos/STOREGAMES.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div>
+      <a class="logo" href="../../index.html">
+        <img src="../../iconos/STOREGAMES.png" class="logo-img">
+        <h1 class="logo-titulo">STOREGAMES</h1>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="caja-publicidad">
+      <h2 class="publicidad-titulo">Publicidad</h2>
+      <div class="caja--publicidad"></div>
+    </div>
+
+    <div class="caja-informacion">
+      <div>
+        <h2 id="titulo" class="juego-titulo">Cargando...</h2>
+        <img id="imagen" class="portada" src="" alt="Portada del juego">
+        <h2 class="descargar"><a id="enlace-descarga" href="#">Descargar</a></h2>
+      </div>
+      <p id="descripcion" class="descripcion">Cargando descripción...</p>
+    </div>
+
+    <div class="caja-requisitos">
+      <div>
+        <h2 class="requisitos-titulo">Requisitos mínimos y Recomendados</h2>
+        <p id="requisitos" class="requisitos">
+          Cargando requisitos...
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../Juegos/juegos.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    if (juegos[id]) {
+      const juego = juegos[id];
+      document.getElementById("titulo").textContent = juego.titulo;
+      document.getElementById("titulo-pagina").textContent = juego.titulo;
+      document.getElementById("imagen").src = juego.imagen;
+      document.getElementById("descripcion").textContent = juego.descripcion;
+      document.getElementById("enlace-descarga").href = juego.enlace;
+      document.getElementById("requisitos").innerHTML = juego.requisitos;
+    } else {
+      document.getElementById("titulo").textContent = "Juego no encontrado";
+      document.getElementById("descripcion").textContent = "";
+      document.getElementById("imagen").style.display = "none";
+      document.getElementById("requisitos").innerHTML = "No disponibles";
+    }
+  </script>
+</body>
+</html>
