@@ -25,15 +25,23 @@ header{
 }
 
 .logo{
-    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap; /* Permite que el texto salte a la línea de abajo si no cabe */
+    align-items: center;
+    overflow: hidden; /* Opcional, evita que desborde visualmente */
+    box-sizing: border-box;
     background-color: #000;
     border-radius: 10px;
     border: solid 2px #000;
+    padding: 5px;
 }
 
 .logo:hover{
     display: flex;
+    flex-wrap: wrap; /* Permite que el texto salte a la línea de abajo si no cabe */
+    align-items: center;
+    overflow: hidden; /* Opcional, evita que desborde visualmente */
+    box-sizing: border-box;
     background-color: #0f0b;
     border-radius: 10px;
     border: solid 2px #000;
@@ -51,9 +59,9 @@ header{
     position: relative;
     top: 10px;
     color: #fff;
-    font-size: 24px;
+    font-size: clamp(10px,4vw, 30px);
     font-family: cursive;
-
+    margin-top: -20px;
 }
 
 .titulo-publicidad{
@@ -231,4 +239,38 @@ footer>p{
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-paginacion {
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-paginacion:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.btn-paginacion:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.texto-pagina {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c3;
 }
