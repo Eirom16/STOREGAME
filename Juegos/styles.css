@@ -5,7 +5,8 @@
 }
 
 body{
-    background-image: url('../iconos/montanas-minimalista-degradado-azul_3840x2160_xtrafondos.com.jpg');
+    background: #05b8ff;
+    background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +43,7 @@ header{
     align-items: center;
     overflow: hidden; /* Opcional, evita que desborde visualmente */
     box-sizing: border-box;
-    background-color: #0f0b;
+    background-color: #26DE72;
     border-radius: 10px;
     border: solid 2px #000;
 }
