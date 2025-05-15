@@ -60,7 +60,7 @@ header{
     top: 10px;
     color: #fff;
     font-size: clamp(10px,4vw, 30px);
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;;
     margin-top: -20px;
 }
 
@@ -100,7 +100,7 @@ footer::-webkit-scrollbar{
 
 footer>p{
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;;
     color: #fff;
     margin: 10px;
 }
@@ -127,7 +127,7 @@ footer>p{
 }
 
 .search{
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;;
     font-size: 20px;
     margin: auto;
     margin-right:0;
@@ -207,12 +207,14 @@ footer>p{
 }
 
 .titulo-game{
+    text-decoration: none;
+    color: #fff;
     font-size: 13px;
     border-radius: 10px;
-    background-color: #00ffff;
+    background-color: #3b82f6;
     margin: 5px;
     text-align: center;
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;;
     
 }
 

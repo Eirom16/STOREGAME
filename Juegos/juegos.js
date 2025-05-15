@@ -30,7 +30,7 @@ const juegos = {
  dbz: {
   titulo: "Dragon Ball: Sparking! Zero",
   descripcion: "Dragon Ball: Sparking! Zero es un videojuego de lucha 3D desarrollado por Spike Chunsoft y publicado por Bandai Namco Entertainment. Es la continuación espiritual de la saga Budokai Tenkaichi, trayendo combates dinámicos y explosivos con una extensa plantilla de personajes del universo Dragon Ball.",
-  imagen: "https://uvejuegos.com/img/caratulas/71681/cover.jpg",
+  imagen: "https://www.gamestorrents.app/wp-content/uploads/2025/04/Dragon-Ball-Sparking-ZERO-pc-free-download.png",
   enlace: "https://mega.nz/file/UudEFa6L#2xMO4QEMzSXIrISAze6rop47XGjaHTYaZz62rb-ZDQo",
   requisitos: `
     <strong>Requisitos mínimos</strong>
@@ -497,7 +497,7 @@ farCry3: {
 
 };
 
-const filasPorPagina = 20;  // cuántas filas mostrar por página
+const filasPorPagina = 15;  // cuántas filas mostrar por página
 const juegosPorFila = 4;    // columnas por fila
 const juegosPorPagina = filasPorPagina * juegosPorFila;
 
