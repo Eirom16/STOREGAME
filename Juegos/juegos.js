@@ -140,7 +140,7 @@ cuphead: {
   titulo: "Cuphead The Delicious Last Course",
   descripcion: "Cuphead es un videojuego de acción y disparos tipo run and gun desarrollado por Studio MDHR. Inspirado en los dibujos animados de los años 30, se caracteriza por su estilo visual retro, música jazz y una jugabilidad centrada en desafiantes combates contra jefes.",
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2022/07/Cuphead-pc-free-download.jpg",
-  enlace: "",
+  enlace: "https://mega.nz/file/gn0B3YQT#GSKn9idVf_Aurauy-3FHGJrZv8Q7FOYsSPrZvJios44",
   requisitos: `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -166,8 +166,8 @@ cuphead: {
 celeste: {
   titulo: "Celeste",
   descripcion: "Celeste es un juego de plataformas desarrollado por Matt Makes Games. Controlas a Madeline en su ascenso a la montaña Celeste, enfrentando desafíos precisos y una historia emocional.",
-  imagen: "",
-  enlace: "",
+  imagen: "https://www.gamestorrents.app/wp-content/uploads/2018/02/Celeste.jpg",
+  enlace: "https://mega.nz/file/dv1EGYrY#S85Eh6URMDzyTwzyJiaw7kTXlRI5LwjiJ7gbMUW6ppg",
   requisitos: `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -191,8 +191,8 @@ celeste: {
 doomEternal: {
   titulo: "DOOM Eternal",
   descripcion: "DOOM Eternal es un shooter en primera persona desarrollado por id Software. Retoma la lucha del Slayer contra hordas demoníacas con acción rápida y brutal.",
-  imagen: "",
-  enlace: "",
+  imagen: "https://www.gamestorrents.app/wp-content/uploads/2023/09/DOOM-Eternal-pc-free-download.jpg",
+  enlace: "https://mega.nz/file/839DjZqR#gfEZi5zJGaNwXSggl_W-3xcy5W-oUgZykvZLc_PoxwY",
   requisitos: `
     <strong>Requisitos mínimos</strong>
     <ul>
