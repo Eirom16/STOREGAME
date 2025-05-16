@@ -214,8 +214,8 @@ doomEternal: {
 undertale: {
   titulo: "Undertale",
   descripcion: "Undertale es un juego de rol independiente donde no tienes que matar a nadie. Con un sistema de combate único y múltiples finales, ofrece una experiencia emocional e inolvidable.",
-  imagen: "",
-  enlace: "",
+  imagen: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/08/undertale.jpg?tf=256x",
+  enlace: "https://mega.nz/file/IxhVha4b#h6fdjpn9iyFw-5RDekhDQulQaQXfkrysxj2tJatWOxo",
   requisitos: `
     <strong>Requisitos mínimos</strong>
     <ul>
