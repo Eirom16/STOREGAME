@@ -37,16 +37,6 @@ header{
     padding: 5px;
 }
 
-.logo:hover{
-    display: flex;
-    flex-wrap: wrap; /* Permite que el texto salte a la línea de abajo si no cabe */
-    align-items: center;
-    overflow: hidden; /* Opcional, evita que desborde visualmente */
-    box-sizing: border-box;
-    background-color: #26DE72;
-    border-radius: 10px;
-    border: solid 2px #000;
-}
 
 
 .logo-img{
@@ -65,9 +55,9 @@ header{
     margin-top: -20px;
 }
 
-.titulo-publicidad{
+.titulo-categorias{
     border-radius: 10px;
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;
     text-align: center;
     background-color: #00ffff;
     font-size: 20px;
@@ -75,11 +65,103 @@ header{
     width: 26vw;
 }
 
-.caja-publicidad{
+
+.categorias::-webkit-scrollbar{
+    display: none;
+}
+
+
+.categorias{
+    position: relative;
+    top:5px;
     border-radius: 10px;
     border: solid 2px #00ffff;
     width: 26vw;
     height: 50vh;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+.categorias>button{
+    background: #00ffff;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    height: 7vh;
+    width: 25vw;
+    border-color: #fff;
+}
+
+.categorias>button:hover{
+    background: #26DE72;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 25vw;
+    height: 8vh;
+}
+
+
+.categorias-contenido{
+    display: flex;
+    border-radius: 10px;
+    list-style: none;
+}
+
+/* Oculta el radio original */
+.categorias-contenido input[type="radio"] {
+  display: none;
+}
+
+/* Estilo base del li (contenedor visible del radio) */
+.categorias-contenido {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Círculo exterior */
+.categorias-contenido::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #00cccc;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.2s;
+}
+
+/* Círculo interior cuando está seleccionado */
+.categorias-contenido input[type="radio"]:checked + h3::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background-color: #26DE72;
+  border-radius: 50%;
+}
+
+/* Opcional: destacar texto activo */
+.categorias-contenido input[type="radio"]:checked + h3 {
+  display: flex;
+  color: #000;
+  font-weight: bold;
+}
+
+
+.categorias-contenido>h3{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: "Cascadia Mono", sans-serif;;
     margin: 5px;
 }
 
@@ -106,20 +188,59 @@ footer>p{
     margin: 10px;
 }
 
+.caja-plataformas{
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: 15px 18px 0 20px;
+    padding-left: 5vw;
+    padding: 5px;
+    display: flex;
+    background-color: #000;
+}
+
+.caja-plataformas>button{
+    display: flex;
+    background: #26DE72;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    height: 6vh;
+    width: 25vw;
+}
+
+.caja-plataformas>button:hover{
+    background: #00ffff;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 25vw;
+}
+
+.plataformas-contenido{
+    display: flex;
+    border-radius: 10px;
+    list-style: none;
+}
+
+
 
 .main-content{
     background-color: #000b;
     border-radius: 10px;
-    margin: 20px;
-    height: 95vh;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
     width: 70vw;
-    border: 3px solid #00ffff;
+    border: 2px solid #00ffff;
 }
 
 .caja-search{
-    border: solid 3px #00ffff;
+    border: solid 2px #00ffff;
     border-radius: 10px;
-    margin: 15px 18px 0 24px;
+    margin: 5px 18px 0 20px;
     padding-left: 5vw;
     padding: 5px;
     display: flex;
@@ -152,7 +273,7 @@ footer>p{
 
 }
 
-.search-bottom:hover{
+.search-bottom:active{
     height: 7vh;
     width: 50px;
     border: 2px solid #fff;
@@ -172,10 +293,10 @@ footer>p{
 
 
 .content-main{
-    
-    height: 80vh;
+     background: #05b8ff;
+    background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
+    height: 75vh;
     width: 67vw;
-    background-color: #111b;
     margin: 5px 20px 0 20px;
     border-radius: 10px;
     overflow: auto;
@@ -196,28 +317,28 @@ footer>p{
     margin: 12px;
     height: 45vh;
     width: 15vw;
-    border: solid 2px #00ffff;
-    background-color: #000b;
+    border: solid 2px #fff;
+    background-color: #fff;
 }
 
 .portada{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     height: 35vh;
     width: 14.7vw;
+    border-radius:10px ;
 }
 
 .titulo-game{
     text-decoration: none;
-    color: #fff;
-    font-size: 13px;
+    color: #000;
+    font-size: 15px;
     border-radius: 10px;
-    background-color: #3b82f6;
     margin: 5px;
     text-align: center;
     font-family: "Cascadia Mono", sans-serif;
     
 }
+
+
 
 .titulo-game:hover{
     border-radius: 10px;
@@ -232,6 +353,7 @@ footer>p{
   display: flex;
   justify-content: center;
   margin-top: 15px;
+
 }
 
 .pagination button {
@@ -242,6 +364,7 @@ footer>p{
   border-radius: 50%;
   width: 30px;
   height: 30px;
+
 }
 
 .paginacion {
@@ -250,6 +373,8 @@ footer>p{
   align-items: center;
   gap: 15px;
   margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
 .btn-paginacion {
@@ -273,7 +398,8 @@ footer>p{
 }
 
 .texto-pagina {
+  font-family: "Cascadia Mono", sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  color: #6c3;
+  color: #2563eb;
 }

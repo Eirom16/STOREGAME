@@ -47,24 +47,36 @@
   </main>
 
   <script src="../../Juegos/juegos.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+  <!-- Carga todos los catálogos individuales -->
+<script src="../../Juegos/juegos.js"></script>
+<script src="../../Juegos/ps2.js"></script>
+<script src="../../Juegos/ps3.js"></script>
+<script src="../../Juegos//psp.js"></script>
+<script src="../../Juegos/nds.js"></script>
+<script src="../../Juegos/xbox_360.js"></script>
 
-    if (juegos[id]) {
-      const juego = juegos[id];
-      document.getElementById("titulo").textContent = juego.titulo;
-      document.getElementById("titulo-pagina").textContent = juego.titulo;
-      document.getElementById("imagen").src = juego.imagen;
-      document.getElementById("descripcion").textContent = juego.descripcion;
-      document.getElementById("enlace-descarga").href = juego.enlace;
-      document.getElementById("requisitos").innerHTML = juego.requisitos;
-    } else {
-      document.getElementById("titulo").textContent = "Juego no encontrado";
-      document.getElementById("descripcion").textContent = "";
-      document.getElementById("imagen").style.display = "none";
-      document.getElementById("requisitos").innerHTML = "No disponibles";
-    }
-  </script>
+<!-- Carga tu lógica para combinar -->
+<script src="../../Juegos/script.js"></script>
+
+<!-- Script para mostrar el juego individual -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  if (juegos[id]) {
+    const juego = juegos[id];
+    document.getElementById("titulo").textContent = juego.titulo;
+    document.getElementById("titulo-pagina").textContent = juego.titulo;
+    document.getElementById("imagen").src = juego.imagen;
+    document.getElementById("descripcion").textContent = juego.descripcion;
+    document.getElementById("enlace-descarga").href = juego.enlace;
+    document.getElementById("requisitos").innerHTML = juego.requisitos;
+  } else {
+    document.getElementById("titulo").textContent = "Juego no encontrado";
+    document.getElementById("descripcion").textContent = "";
+    document.getElementById("imagen").style.display = "none";
+    document.getElementById("requisitos").innerHTML = "No disponibles";
+  }
+</script>
 </body>
 </html>
