@@ -5,13 +5,15 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     background: #05b8ff;
     background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+    background-attachment: fixed;
 }
 
 body{display: flex;}
