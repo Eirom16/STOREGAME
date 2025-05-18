@@ -243,7 +243,7 @@ if (Object.keys(juegos).length > 0) {
 
         // Oculta o muestra el main dependiendo del estado del header
         if (header.classList.contains("visible")) {
-            main.style.display = "none";
+            main.style.display = "";
         } else {
             main.style.display = "block";
         }
