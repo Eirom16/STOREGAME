@@ -15,30 +15,61 @@ if (typeof juegosNDS !== "undefined") Object.assign(juegos, juegosNDS);
 if (typeof juegosXbox_360 !== "undefined") Object.assign(juegos, juegosXbox_360);
 
 // Función para realizar la búsqueda
-function performSearch() {
-  const searchTerm = document.getElementById('searchBar').value.toLowerCase();
-  const items = document.querySelectorAll('main h3');
+function normalizarTexto(texto) {
+  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
 
-  let foundItem = null;
-  items.forEach(item => {
-    const text = item.textContent.toLowerCase();
-    if (text.includes(searchTerm)) {
-      foundItem = item;
+function performSearch() {
+  const searchTerm = normalizarTexto(document.getElementById('searchBar').value.trim());
+  const juegosDivs = document.querySelectorAll('.game-download');
+
+  if (searchTerm === "") {
+    // Si el campo está vacío, mostrar todos
+    juegosDivs.forEach(div => {
+      div.style.display = '';
+      div.style.order = '0';
+    });
+    return;
+  }
+
+  const resultados = [];
+
+  juegosDivs.forEach(div => {
+    const tituloElem = div.querySelector('.titulo-game');
+    const texto = normalizarTexto(tituloElem.textContent);
+
+    if (texto.includes(searchTerm)) {
+      let prioridad = 2;
+      if (texto.startsWith(searchTerm)) prioridad = 1;
+      if (texto === searchTerm) prioridad = 0;
+
+      resultados.push({ elemento: div, prioridad });
+    } else {
+      div.style.display = 'none'; // Ocultar los que no coinciden
     }
   });
 
-  if (foundItem) {
-    const parent = foundItem.parentElement;
-    parent.style.order = '-1';
-    parent.scrollIntoView({ behavior: 'smooth' });
+  if (resultados.length > 0) {
+    // Mostrar y ordenar los que coinciden
+    resultados.sort((a, b) => a.prioridad - b.prioridad);
+    resultados.forEach((resultado, i) => {
+      resultado.elemento.style.display = '';
+      resultado.elemento.style.order = `${i - 1000}`;
+    });
+
+    resultados[0].elemento.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
+
 // Eventos de búsqueda
+const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('input', performSearch); // Búsqueda en tiempo real
 document.getElementById('searchButton').addEventListener('click', performSearch);
-document.getElementById('searchBar').addEventListener('keydown', function(event) {
+searchBar.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') performSearch();
 });
+
 
 // Mostrar juegos según filtros
 function mostrarJuegos() {
@@ -152,3 +183,60 @@ if (Object.keys(juegos).length > 0) {
 } else {
   console.error("No se han cargado los juegos.");
 }
+
+  // FUNCIONES GENERALES
+  function activarBotonConValor(botones, tipo, valorGuardado) {
+    botones.forEach(btn => {
+      const valor = btn.dataset[tipo];
+      if (valor === valorGuardado) {
+        btn.classList.add('activo');
+      } else {
+        btn.classList.remove('activo');
+      }
+    });
+  }
+
+  // PLATAFORMAS
+  const botonesPlataforma = document.querySelectorAll('.plataforma-btn');
+
+  botonesPlataforma.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const valor = btn.dataset.plataforma;
+      localStorage.setItem('plataformaSeleccionada', valor);
+      activarBotonConValor(botonesPlataforma, 'plataforma', valor);
+    });
+  });
+
+  // CATEGORÍAS
+  const botonesCategoria = document.querySelectorAll('.categoria-btn');
+
+  botonesCategoria.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const valor = btn.dataset.categoria;
+      localStorage.setItem('categoriaSeleccionada', valor);
+      activarBotonConValor(botonesCategoria, 'categoria', valor);
+    });
+  });
+
+  // AL CARGAR LA PÁGINA: restaurar selección
+  window.addEventListener('DOMContentLoaded', () => {
+    const plataformaGuardada = localStorage.getItem('plataformaSeleccionada');
+    const categoriaGuardada = localStorage.getItem('categoriaSeleccionada');
+
+    if (plataformaGuardada) {
+      activarBotonConValor(botonesPlataforma, 'plataforma', plataformaGuardada);
+    }
+
+    if (categoriaGuardada) {
+      activarBotonConValor(botonesCategoria, 'categoria', categoriaGuardada);
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.querySelector(".logo");
+    const header = document.querySelector("header");
+
+    logo.addEventListener("click", function () {
+        header.classList.toggle("visible");
+    });
+});

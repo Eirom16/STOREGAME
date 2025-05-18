@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: none;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,25 +16,19 @@ body{
 
 body{display: flex;}
 
-header{
-    margin: 0;
-    background-color: #001b;
-    height: 100vh;
-    width: 30vw;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
 .logo{
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap; /* Permite que el texto salte a la línea de abajo si no cabe */
     align-items: center;
     overflow: hidden; /* Opcional, evita que desborde visualmente */
-    box-sizing: border-box;
+    margin: 2px 0px 2px 2px;
     background-color: #000;
+    height: 9vh;
+    width: 99.4vw;
+    position: absolute;
+    border-color: #05b8ff;
     border-radius: 10px;
-    border: solid 2px #000;
-    padding: 5px;
 }
 
 
@@ -51,9 +45,22 @@ header{
     top: 10px;
     color: #fff;
     font-size: clamp(10px,4vw, 30px);
-    font-family: "Cascadia Mono", sans-serif;;
+    font-family: "Cascadia Mono", sans-serif;
     margin-top: -20px;
 }
+
+header{
+    background-color: #000;
+    margin-top: 10vh;
+    margin-left: 2px;
+    height: 90vh;
+    width: 27vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
 
 .titulo-categorias{
     border-radius: 10px;
@@ -83,7 +90,7 @@ header{
 }
 
 .categorias>button{
-    background: #00ffff;
+    background: #26DE72;
     padding: 0px;
     border-radius: 10px;
     text-align: center;
@@ -94,7 +101,17 @@ header{
 }
 
 .categorias>button:hover{
-    background: #26DE72;
+    background: #00ffff;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 25vw;
+    height: 8vh;
+}
+
+.categorias>button.activo{
+    background: #00ffff;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
@@ -104,57 +121,13 @@ header{
 }
 
 
+
 .categorias-contenido{
     display: flex;
     border-radius: 10px;
     list-style: none;
 }
 
-/* Oculta el radio original */
-.categorias-contenido input[type="radio"] {
-  display: none;
-}
-
-/* Estilo base del li (contenedor visible del radio) */
-.categorias-contenido {
-  position: relative;
-  padding-left: 30px;
-  list-style: none;
-  cursor: pointer;
-}
-
-/* Círculo exterior */
-.categorias-contenido::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #00cccc;
-  border-radius: 50%;
-  background-color: white;
-  transition: 0.2s;
-}
-
-/* Círculo interior cuando está seleccionado */
-.categorias-contenido input[type="radio"]:checked + h3::before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 12px;
-  width: 8px;
-  height: 8px;
-  background-color: #26DE72;
-  border-radius: 50%;
-}
-
-/* Opcional: destacar texto activo */
-.categorias-contenido input[type="radio"]:checked + h3 {
-  display: flex;
-  color: #000;
-  font-weight: bold;
-}
 
 
 .categorias-contenido>h3{
@@ -198,7 +171,7 @@ footer>p{
     background-color: #000;
 }
 
-.caja-plataformas>button{
+.plataforma-btn{
     display: flex;
     background: #26DE72;
     padding: 5px;
@@ -209,7 +182,16 @@ footer>p{
     width: 25vw;
 }
 
-.caja-plataformas>button:hover{
+.plataforma-btn:hover{
+    background: #00ffff;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 25vw;
+}
+
+.plataforma-btn.activo{
     background: #00ffff;
     padding-left: 15px;
     border-radius: 10px;
@@ -222,6 +204,7 @@ footer>p{
     display: flex;
     border-radius: 10px;
     list-style: none;
+    font-family: 'Cascadia Mono', sans-serif;
 }
 
 
@@ -229,12 +212,15 @@ footer>p{
 .main-content{
     background-color: #000b;
     border-radius: 10px;
+    margin: 10vh;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;
-    height: 100vh;
-    width: 70vw;
+    margin-right: 2px;
+    height: 90vh;
+    width: 71vw;
     border: 2px solid #00ffff;
+    position: relative;
+    z-index: 1;
 }
 
 .caja-search{
@@ -259,6 +245,12 @@ footer>p{
     border-bottom-left-radius: 30px;
     padding: 10px;
     border: solid 2px #fff;
+}
+
+.search::placeholder{
+    color: #fff;
+    font-family: "Cascadia Mono", sans-serif;;
+    font-size: 20px;
 }
 
 .search-bottom{
@@ -295,7 +287,7 @@ footer>p{
 .content-main{
      background: #05b8ff;
     background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
-    height: 75vh;
+    height: 65vh;
     width: 67vw;
     margin: 5px 20px 0 20px;
     border-radius: 10px;
@@ -315,6 +307,16 @@ footer>p{
     box-sizing: border-box;
     border-radius: 10px;
     margin: 12px;
+    height: 45vh;
+    width: 15vw;
+    border: solid 2px #fff;
+    background-color: #fff;
+}
+
+.game-download:hover{
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 5px 0 0 12px;
     height: 45vh;
     width: 15vw;
     border: solid 2px #fff;
@@ -342,7 +344,7 @@ footer>p{
 
 .titulo-game:hover{
     border-radius: 10px;
-    background-color: #0f0b;
+    background-color: #26DE72;
     margin: 5px;
     text-align: center;
     font-family: cursive;
@@ -403,3 +405,145 @@ footer>p{
   font-weight: 500;
   color: #2563eb;
 }
+
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        left: -100vw;
+        top: 0;
+        height: 100vh;
+        width: 99.5vw;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    header.visible {
+        left: 0;
+    }
+
+
+    header.visible ~ .main-content {
+        display: none; /* ocultar el main cuando header está visible */
+    }
+
+    .filas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .game-download {
+        width: 35vw; /* 2 por fila con margen */
+        height: 40vh; /* Ajustar la altura según sea necesario */
+        margin: 5px; /* Espacio entre los elementos */
+    }
+
+    .game-download:hover{
+    margin: 5px 0 0 12px;
+    height: 41vh;
+    width: 35.5vw;
+
+    }
+
+    .portada {
+        width: 34vw; /* 2 por fila con margen */
+        height: 30vh; /* Ajustar la altura según sea necesario */
+    }
+
+    .portada:hover{
+        width: 34.99vw; /* 2 por fila con margen */
+        height: 30vh; /* Ajustar la altura según sea necesario */
+    }
+
+    .main-content {
+        width: 90vw; /* 1 por fila con margen */
+    }
+
+    .content-main {
+        width: 79vw; /* 1 por fila con margen */
+    }
+
+    .plataforma-btn{
+        width: 9.9vw;
+    }
+
+    
+
+    .plataformas-contenido{
+        font-size: 10px;
+    }
+
+    .titulo-categorias{
+    border-radius: 10px;
+    font-family: "Cascadia Mono", sans-serif;
+    text-align: center;
+    background-color: #00ffff;
+    font-size: 20px;
+    margin: 5px;
+    width: 97vw;
+}
+
+
+    .categorias{
+    position: relative;
+    top:5px;
+    border-radius: 10px;
+    border: solid 2px #00ffff;
+    width: 97vw;
+    height: 50vh;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+.categorias>button{
+    background: #26DE72;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    height: 7vh;
+    width: 44vw;
+    border-color: #fff;
+}
+
+.categorias>button:hover{
+    background: #00ffff;
+    padding-left: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 44vw;
+    height: 7vh;
+}
+
+.categorias>button.activo{
+    background: #00ffff;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 44vw;
+    height: 7vh;
+}
+
+
+footer{
+    position: relative;
+    top:5px;
+    border-radius: 10px;
+    border: solid 2px #00ffff;
+    width: 97vw;
+    height: 32vh;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+.search::placeholder{
+    color: #6b6e6c;
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 15px;
+}
+    
+
+}
+

@@ -1,11 +1,13 @@
 body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     background: #05b8ff;
     background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+    background-attachment: fixed;
 }
 
 main{
@@ -60,39 +62,7 @@ main{
 }
 
 
-.caja-publicidad{
-    text-align: center;
-    border: solid 2px #00ffff;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 1vh;
-    height: 80vh;
-    width: 30vw;
-    background-color: #111b;
-}
 
-.publicidad-titulo{
-    
-    background-color: #00ffff;
-    border-radius: 10px;
-    margin: 5px;
-    font-family: "Cascadia Mono", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-.caja--publicidad{
-    text-align: center;
-    border: solid 2px #00ffff;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 1vh;
-    height: 72vh;
-    width: 28vw;
-    background-color: #1118;
-}
 
 .caja-informacion{
     border: solid 2px #00ffff;
@@ -193,4 +163,100 @@ span{
     color: #000;
     font-size: 17px;
     border-radius: 10px;
+}
+
+.caja-trailer{
+    text-align: center;
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 80vh;
+    width: 30vw;
+    background-color: #111b;
+}
+
+.trailer-titulo{
+    
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin: 5px;
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.caja--trailer{
+    text-align: center;
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 72vh;
+    width: 28vw;
+    background-color: #1118;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .caja-informacion {
+    order: 1;
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .caja-requisitos {
+    order: 2;
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .caja-trailer {
+    order: 3;
+    width: 90vw;
+    height: 50vh;
+  }
+
+  
+
+.portada{
+    position: relative;
+    left: 18vw;
+    margin: 5px ;
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    border: solid 2px #00ffff;
+}
+
+.requisitos-titulo{
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 88vw;
+}
+
+.caja--trailer{
+    text-align: center;
+    border: solid 2px #00ffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 43vh;
+    width: 85vw;
+    background-color: #1118;
+}
+
 }
