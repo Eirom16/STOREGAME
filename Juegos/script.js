@@ -232,4 +232,29 @@ if (Object.keys(juegos).length > 0) {
     }
   });
 
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.querySelector(".logo");
+    const header = document.querySelector("header");
+    const main = document.querySelector("main");
+    const botonesCategoria = document.querySelectorAll(".categoria-btn");
+
+    function toggleMenu() {
+        header.classList.toggle("visible");
+
+        // Oculta o muestra el main dependiendo del estado del header
+        if (header.classList.contains("visible")) {
+            main.style.display = "none";
+        } else {
+            main.style.display = "block";
+        }
+    }
+
+    // Click en el logo
+    logo.addEventListener("click", toggleMenu);
+
+    // Click en cualquier botón de categoría
+    botonesCategoria.forEach(btn => {
+        btn.addEventListener("click", toggleMenu);
+    });
+});
+
