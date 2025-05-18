@@ -199,6 +199,14 @@ span{
     background-color: #1118;
 }
 
+#trailer{
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15vh;
+    height: 40vh;
+    width: 27vw;
+}
+
 @media (max-width: 768px) {
   main {
     display: flex;
@@ -257,6 +265,14 @@ span{
     height: 43vh;
     width: 85vw;
     background-color: #1118;
+}
+
+#trailer{
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 6.5vh;
+    height: 30vh;
+    width: 75vw;
 }
 
 }

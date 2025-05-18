@@ -7,6 +7,7 @@ godOfWar2: {
   enlace: "ruta/descarga-gow2.html",
   categoria: "Acción",
   plataforma: "PS3",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos para emulador</strong>
     <ul>

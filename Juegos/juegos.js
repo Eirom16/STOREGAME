@@ -6,6 +6,7 @@ const juegosPC = {
   imagen: "https://m.media-amazon.com/images/I/810xE2BD6bL._AC_UF1000,1000_QL80_.jpg",
   enlace: "https://mega.nz/file/xiE22QJQ#cHTjGWBra5H1-oJDFf7mnE20o1bozq4HbMMh4FXkY80",
   categoria: "Carreras",
+  trailer: "https://www.youtube.com/embed/yBDLMzwMAdc?si=kyS5FxBraMNtY_Yg",
   platafortma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
@@ -35,6 +36,7 @@ const juegosPC = {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2025/04/Dragon-Ball-Sparking-ZERO-pc-free-download.png",
   enlace: "https://mega.nz/file/UudEFa6L#2xMO4QEMzSXIrISAze6rop47XGjaHTYaZz62rb-ZDQo",
   categoria: "Lucha",
+  trailer: "",
   platafortma: "PC",
   requisitos:  `
     <strong>Requisitos mínimos</strong>
@@ -65,6 +67,7 @@ hollowKnight: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2018/04/HOLLOW-.jpg",
   enlace: "https://mega.nz/file/9z1UQQyK#FkhBiXsQvkucvtKyBuzwVAHNTqaLM0oqJ1VLXuLyPNI",
   categoria: "Aventura",
+  trailer: "",
   platafortma: "PC",
   requisitos:  `
     <strong>Requisitos mínimos</strong>
@@ -94,6 +97,7 @@ sanAndreas: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2017/12/grand-theft-auto-.jpg",
   enlace: "https://mega.nz/file/B70hjSrZ#UK7_KhjgGV7_Tgtn3iidmai8VraNjry8O3xUAYtufWM",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -121,6 +125,7 @@ gtaV: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2019/03/gta-v.jpg",
   enlace: "https://mega.nz/file/NqtThKgT#Qa7KPgXVDEJ6aB3iuJ4Qc-2b3-NKbjOnzUBOfBeODnA",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -150,6 +155,7 @@ cuphead: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2022/07/Cuphead-pc-free-download.jpg",
   enlace: "https://mega.nz/file/gn0B3YQT#GSKn9idVf_Aurauy-3FHGJrZv8Q7FOYsSPrZvJios44",
   categoria: "Aventura",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -178,6 +184,7 @@ celeste: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2018/02/Celeste.jpg",
   enlace: "https://mega.nz/file/dv1EGYrY#S85Eh6URMDzyTwzyJiaw7kTXlRI5LwjiJ7gbMUW6ppg",
   categoria: "Plataformas",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -203,6 +210,7 @@ doomEternal: {
   descripcion: "DOOM Eternal es un shooter en primera persona desarrollado por id Software. Retoma la lucha del Slayer contra hordas demoníacas con acción rápida y brutal.",
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2023/09/DOOM-Eternal-pc-free-download.jpg",
   enlace: "https://mega.nz/file/839DjZqR#gfEZi5zJGaNwXSggl_W-3xcy5W-oUgZykvZLc_PoxwY",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -227,6 +235,7 @@ undertale: {
   imagen: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/08/undertale.jpg?tf=256x",
   enlace: "https://mega.nz/file/IxhVha4b#h6fdjpn9iyFw-5RDekhDQulQaQXfkrysxj2tJatWOxo",
   categoria: "RPG",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -247,6 +256,7 @@ bioshockInfinite: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -265,6 +275,7 @@ terraria: {
   imagen: "",
   enlace: "",
   categoria: "Aventura",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -283,6 +294,7 @@ portal2: {
   imagen: "",
   enlace: "",
   categoria: "Puzles",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -301,6 +313,7 @@ hotlineMiami: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -319,6 +332,7 @@ residentEvil4: {
   imagen: "",
   enlace: "",
   categoria: "Terror",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -342,6 +356,7 @@ redDeadRedemption2: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -366,6 +381,7 @@ theWitcher3: {
   imagen: "",
   enlace: "",
   categoria: "RPG",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -385,6 +401,7 @@ eldenRing: {
   imagen: "",
   enlace: "",
   categoria: "RPG",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -408,6 +425,7 @@ fallout4: {
   imagen: "",
   enlace: "",
   categoria: "RPG",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -425,6 +443,7 @@ justCause3: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -442,6 +461,7 @@ spiderman: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -459,6 +479,7 @@ hades: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -476,6 +497,7 @@ deadCells: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -493,6 +515,8 @@ farCry3: {
   imagen: "",
   enlace: "",
   categoria: "Acción",
+  trailer: "",
+  trailer: "",
   platafortma: "PC", requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>

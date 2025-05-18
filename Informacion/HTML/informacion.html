@@ -44,12 +44,16 @@
 
     <div class="caja-trailer">
       <h2 class="trailer-titulo">Trailer</h2>
-      <div class="caja--trailer"></div>
+      <div class="caja--trailer">
+        <div class="trailer-container">
+           <iframe id="trailer" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+             </div>
+
+      </div>
     </div>
     
   </main>
 
-  <script src="../../Juegos/juegos.js"></script>
   <!-- Carga todos los catálogos individuales -->
 <script src="../../Juegos/juegos.js"></script>
 <script src="../../Juegos/ps2.js"></script>
@@ -74,6 +78,11 @@
     document.getElementById("descripcion").textContent = juego.descripcion;
     document.getElementById("enlace-descarga").href = juego.enlace;
     document.getElementById("requisitos").innerHTML = juego.requisitos;
+
+    // Solo si existe el trailer, agregamos la URL al iframe
+    if (juego.trailer) {
+      document.getElementById("trailer").src = juego.trailer;
+    }
   } else {
     document.getElementById("titulo").textContent = "Juego no encontrado";
     document.getElementById("descripcion").textContent = "";
@@ -81,5 +90,8 @@
     document.getElementById("requisitos").innerHTML = "No disponibles";
   }
 </script>
+
+
+
 </body>
 </html>
