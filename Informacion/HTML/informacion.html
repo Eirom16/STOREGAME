@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -28,7 +30,8 @@
       <div>
         <h2 id="titulo" class="juego-titulo">Cargando...</h2>
         <img id="imagen" class="portada" src="" alt="Portada del juego">
-        <h2 class="descargar"><a id="enlace-descarga" href="#">Descargar</a></h2>
+        <h2 class="plataforma-titulo" id="plataforma">Plataforma</h2>
+        <h2 class="descargar"><a id="enlace-descarga" href="#"><i class="material-icons">download</i>Descargar</a></h2>
       </div>
       <p id="descripcion" class="descripcion">Cargando descripción...</p>
     </div>
@@ -76,6 +79,7 @@
     document.getElementById("titulo-pagina").textContent = juego.titulo;
     document.getElementById("imagen").src = juego.imagen;
     document.getElementById("descripcion").textContent = juego.descripcion;
+    document.getElementById("plataforma").textContent = juego.plataforma;
     document.getElementById("enlace-descarga").href = juego.enlace;
     document.getElementById("requisitos").innerHTML = juego.requisitos;
 

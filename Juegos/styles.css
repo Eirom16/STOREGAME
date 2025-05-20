@@ -81,6 +81,7 @@ header{
 
 
 .categorias{
+    background-color: #000;
     position: relative;
     top:5px;
     border-radius: 10px;
