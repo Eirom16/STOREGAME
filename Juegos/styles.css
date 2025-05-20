@@ -503,7 +503,9 @@ footer>p{
     }
 
     .plataforma-btn{
-        width: 20vw;
+        width: 30vw;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     
@@ -512,11 +514,12 @@ footer>p{
         font-size: 10px;
     }
 
+
+
     .titulo-categorias{
     border-radius: 10px;
     font-family: "Cascadia Mono", sans-serif;
     text-align: center;
-    background-color: #00ffff;
     font-size: 20px;
     margin: 5px;
     width: 97vw;
