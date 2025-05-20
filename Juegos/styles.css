@@ -466,6 +466,10 @@ footer>p{
         display: none; /* ocultar el main cuando header está visible */
     }
 
+    .main-content{
+        width: 99.5vw;
+    }
+
     .filas {
         flex-wrap: wrap;
         justify-content: center;
