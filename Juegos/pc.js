@@ -7,7 +7,7 @@ const juegosPC = {
   enlace: "https://cuty.io/9QpMHd22c",
   categoria: "Carreras",
   trailer: "https://www.youtube.com/embed/yBDLMzwMAdc?si=kyS5FxBraMNtY_Yg",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -37,7 +37,7 @@ const juegosPC = {
   enlace: "https://cuty.io/QE32rO5g",
   categoria: "Lucha",
   trailer: "https://www.youtube.com/embed/XTvBSY0YMyg?si=-7wfz8ZG-I9tSr8u",
-  platafortma: "PC",
+  plataforma: "PC",
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -68,7 +68,7 @@ hollowKnight: {
   enlace: "https://cuty.io/wHyKIJ",
   categoria: "Aventura",
   trailer: "https://www.youtube.com/embed/nSPJXlYjENE?si=m2vh42v4mLAKoSSQ",
-  platafortma: "PC",
+  plataforma: "PC",
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -98,7 +98,7 @@ sanAndreas: {
   enlace: "https://cuty.io/dgFiy8GdZD3",
   categoria: "Acción",
   trailer: "https://www.youtube.com/embed/yOzcbtsw_pQ?si=Y-xAmbQ0tP-CMdEr",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -127,7 +127,7 @@ gtaV: {
   enlace: "https://cuty.io/YccOOJI",
   categoria: "Acción",
   trailer: "https://www.youtube.com/embed/QkkoHAzjnUs?si=z4RhvN0D0zzjWLYX",
-  platafortma: "PC",
+  plataforma: "PC",
    requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -158,7 +158,7 @@ cuphead: {
   enlace: "https://cuty.io/zMV2BtGR5y",
   categoria: "Aventura",
   trailer: "https://www.youtube.com/embed/NN-9SQXoi50?si=Wtgvf7SX5UXZUDqx",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -188,7 +188,7 @@ celeste: {
   enlace: "https://cuty.io/b0pZ3Yzl3Nf",
   categoria: "Plataformas",
   trailer: "https://www.youtube.com/embed/70d9irlxiB4?si=1H70X-jerz_GZFdu",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -215,7 +215,7 @@ doomEternal: {
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2023/09/DOOM-Eternal-pc-free-download.jpg",
   enlace: "https://cuty.io/c100do7",
   trailer: "https://www.youtube.com/embed/6SRj82vc1Jg?si=NeMLsW8hi4NVbUM2",
-  platafortma: "PC",
+  plataforma: "PC",
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -241,7 +241,7 @@ undertale: {
   enlace: "https://cuty.io/5G0FG6yeRnd",
   categoria: "RPG",
   trailer: "https://www.youtube.com/embed/1Hojv0m3TqA?si=i5DyDE74tjXKAYCo",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>
@@ -261,7 +261,7 @@ terraria: {
   enlace: "",
   categoria: "Aventura",
   trailer: "",
-  platafortma: "PC", 
+  plataforma: "PC", 
   requisitos:  `
     <strong>Requisitos mínimos</strong>
     <ul>

@@ -103,13 +103,12 @@ header{
 }
 
 .categorias>button:hover{
-    background: #00ffff;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
     width: 25vw;
-    height: 8vh;
+    height: 9vh;
 }
 
 .categorias>button.activo{
@@ -163,18 +162,31 @@ footer>p{
     margin: 10px;
 }
 
+.caja-plataformas::-webkit-scrollbar{
+    display: none;
+}
+
 .caja-plataformas{
-    border: solid 2px #00ffff;
-    border-radius: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    border-top: solid 2px #00ffff;
+    border-left:solid 2px #00ffff;
+    border-right: solid 2px #00ffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin: 15px 18px 0 20px;
     padding-left: 5vw;
-    padding: 5px;
+    padding: 2px;
     display: flex;
     background-color: #000;
 }
 
 .plataforma-btn{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: #26DE72;
     padding: 5px;
     border-radius: 10px;
@@ -185,12 +197,12 @@ footer>p{
 }
 
 .plataforma-btn:hover{
-    background: #00ffff;
+    background: #26DE72;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
-    margin: 5px;
-    width: 25vw;
+    width: 26vw;
+    height: 7vh;
 }
 
 .plataforma-btn.activo{
@@ -225,11 +237,14 @@ footer>p{
 }
 
 .caja-search{
-    border: solid 2px #00ffff;
-    border-radius: 10px;
-    margin: 5px 18px 0 20px;
+    border-bottom: solid 2px #00ffff;
+    border-left:solid 2px #00ffff;
+    border-right: solid 2px #00ffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px 18px 0 20px;
     padding-left: 5vw;
-    padding: 5px;
+    padding: 5px ;
     display: flex;
     background-color: #000;
 
@@ -308,7 +323,7 @@ footer>p{
     box-sizing: border-box;
     border-radius: 10px;
     margin: 12px;
-    height: 45vh;
+    height: 48vh;
     width: 15vw;
     border: solid 2px #fff;
     background-color: #fff;
@@ -318,10 +333,20 @@ footer>p{
     box-sizing: border-box;
     border-radius: 10px;
     margin: 5px 0 0 12px;
-    height: 45vh;
+    height: 48vh;
     width: 15vw;
     border: solid 2px #fff;
     background-color: #fff;
+}
+
+.plataforma-game{
+    background-color: #26DE72;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 5px;
+    font-family: "Cascadia Mono", sans-serif;
 }
 
 .portada{
@@ -348,9 +373,21 @@ footer>p{
     background-color: #26DE72;
     margin: 5px;
     text-align: center;
-    font-family: cursive;
+    font-family: "Cascadia Mono", sans-serif;
     
 }
+
+.enlace-titulo{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+
 
 .pagination {
   display: flex;
@@ -435,13 +472,13 @@ footer>p{
 
     .game-download {
         width: 35vw; /* 2 por fila con margen */
-        height: 40vh; /* Ajustar la altura según sea necesario */
+        height: 45vh; /* Ajustar la altura según sea necesario */
         margin: 5px; /* Espacio entre los elementos */
     }
 
     .game-download:hover{
     margin: 5px 0 0 12px;
-    height: 41vh;
+    height: 45vh;
     width: 35.5vw;
 
     }
@@ -465,7 +502,7 @@ footer>p{
     }
 
     .plataforma-btn{
-        width: 9.9vw;
+        width: 20vw;
     }
 
     

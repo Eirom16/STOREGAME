@@ -8,6 +8,7 @@ let paginaActual = 1;
 // Combinar todos los juegos
 let juegos = {};
 if (typeof juegosPC !== "undefined") Object.assign(juegos, juegosPC);
+if (typeof juegosAndroid !== "undefined") Object.assign(juegos, juegosAndroid);
 if (typeof juegosPS2 !== "undefined") Object.assign(juegos, juegosPS2);
 if (typeof juegosPS3 !== "undefined") Object.assign(juegos, juegosPS3);
 if (typeof juegosPSP !== "undefined") Object.assign(juegos, juegosPSP);
@@ -96,10 +97,13 @@ function mostrarJuegos() {
     const juegoDiv = document.createElement("div");
     juegoDiv.classList.add("game-download");
     juegoDiv.innerHTML = `
-      <a href="Informacion/HTML/informacion.html?id=${id}">
+      <a class="enlace-titulo" href="Informacion/HTML/informacion.html?id=${id}">
+      <p class="plataforma-game">${juego.plataforma}</p>
         <img class="portada" src="${juego.imagen}" alt="${juego.titulo}">
         <p class="titulo-game">${juego.titulo}</p>
       </a>
+      
+      
     `;
     fila.appendChild(juegoDiv);
 

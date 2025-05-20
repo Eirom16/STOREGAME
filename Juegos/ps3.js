@@ -8,7 +8,7 @@ godOfWar2: {
   categoria: "Acción",
   plataforma: "PS3",
   trailer: "",
-  platafortma: "PC", requisitos:  `
+  requisitos:  `
     <strong>Requisitos para emulador</strong>
     <ul>
       <li>SO: Windows 10</li>

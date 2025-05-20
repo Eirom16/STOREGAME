@@ -1,14 +1,14 @@
-const juegosPS2 = {
+const juegosAndroid = {
 
-godOfWar1: {
+    
+freefire: {
   titulo: "God of War III",
   descripcion: "Kratos continúa su viaje de venganza contra los dioses del Olimpo.",
   imagen: "ruta/imagen-gow2.jpg",
   enlace: "ruta/descarga-gow2.html",
   categoria: "Acción",
-  plataforma: "PS2",
+  plataforma: "Android",
   trailer: "",
-
   requisitos:  `
     <strong>Requisitos para emulador</strong>
     <ul>
@@ -19,5 +19,4 @@ godOfWar1: {
     </ul>
   `
 },
-
-};
+}
