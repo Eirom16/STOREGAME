@@ -224,17 +224,21 @@ if (Object.keys(juegos).length > 0) {
 
   // AL CARGAR LA PÁGINA: restaurar selección
   window.addEventListener('DOMContentLoaded', () => {
-    const plataformaGuardada = localStorage.getItem('plataformaSeleccionada');
-    const categoriaGuardada = localStorage.getItem('categoriaSeleccionada');
+  const plataformaGuardada = localStorage.getItem('plataformaSeleccionada');
+  const categoriaGuardada = localStorage.getItem('categoriaSeleccionada');
 
-    if (plataformaGuardada) {
-      activarBotonConValor(botonesPlataforma, 'plataforma', plataformaGuardada);
-    }
+  if (plataformaGuardada) {
+    filtroPlataforma = plataformaGuardada; // <-- Añade esto
+    activarBotonConValor(botonesPlataforma, 'plataforma', plataformaGuardada);
+  }
 
-    if (categoriaGuardada) {
-      activarBotonConValor(botonesCategoria, 'categoria', categoriaGuardada);
-    }
-  });
+  if (categoriaGuardada) {
+    filtroCategoria = categoriaGuardada; // <-- Añade esto
+    activarBotonConValor(botonesCategoria, 'categoria', categoriaGuardada);
+  }
+
+  mostrarJuegos(); // <-- Llama aquí para mostrar según lo guardado
+});
 
   document.addEventListener("DOMContentLoaded", function () {
     const logo = document.querySelector(".logo");

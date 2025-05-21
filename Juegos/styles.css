@@ -93,6 +93,7 @@ header{
 }
 
 .categorias>button{
+    border: solid 2px #26DE72;
     background: #26DE72;
     padding: 0px;
     border-radius: 10px;
@@ -100,19 +101,20 @@ header{
     margin: 5px;
     height: 7vh;
     width: 25vw;
-    border-color: #fff;
 }
 
 .categorias>button:hover{
+    border: solid 2px #00ffff;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
     width: 25vw;
-    height: 9vh;
+    height: 7vh;
 }
 
 .categorias>button.activo{
+    border: solid 2px #00ffff;
     background: #00ffff;
     padding-left: 15px;
     border-radius: 10px;
@@ -186,6 +188,7 @@ footer>p{
 
 .plataforma-btn{
     display: flex;
+    border: solid 2px #26DE72;
     justify-content: center;
     align-items: center;
     background: #26DE72;
@@ -199,15 +202,17 @@ footer>p{
 
 .plataforma-btn:hover{
     background: #26DE72;
+    border: solid 2px #00ffff;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 26vw;
-    height: 7vh;
+    width: 25vw;
+    height: 6vh;
 }
 
 .plataforma-btn.activo{
     background: #00ffff;
+    border: #00ffff;
     padding-left: 15px;
     border-radius: 10px;
     text-align: center;
@@ -321,6 +326,8 @@ footer>p{
 }
 
 .game-download{
+    overflow: hidden;
+    text-overflow: ellipsis;
     box-sizing: border-box;
     border-radius: 10px;
     margin: 12px;
@@ -332,12 +339,12 @@ footer>p{
 
 .game-download:hover{
     box-sizing: border-box;
-    border-radius: 10px;
-    margin: 5px 0 0 12px;
-    height: 48vh;
-    width: 15vw;
-    border: solid 2px #fff;
+    border-radius: 15px;
+    border: solid 5px #26DE72;
     background-color: #fff;
+    overflow: none;
+    text-overflow: none;
+    box-sizing: border-box;
 }
 
 .plataforma-game{
@@ -354,6 +361,11 @@ footer>p{
     height: 35vh;
     width: 14.7vw;
     border-radius:10px ;
+}
+
+.portada:hover{
+    height: 35vh;
+    width: 14.9vw;
 }
 
 .titulo-game{
@@ -476,7 +488,7 @@ footer>p{
     }
 
     .game-download {
-        width: 35vw; /* 2 por fila con margen */
+        width: 41vw; /* 2 por fila con margen */
         height: 45vh; /* Ajustar la altura según sea necesario */
         margin: 5px; /* Espacio entre los elementos */
     }
@@ -489,22 +501,24 @@ footer>p{
     }
 
     .portada {
-        width: 34vw; /* 2 por fila con margen */
+        width: 40vw; /* 2 por fila con margen */
         height: 30vh; /* Ajustar la altura según sea necesario */
     }
 
     .portada:hover{
-        width: 34.99vw; /* 2 por fila con margen */
+        width: 40vw; /* 2 por fila con margen */
         height: 30vh; /* Ajustar la altura según sea necesario */
     }
 
     .main-content {
-        width: 90vw; /* 1 por fila con margen */
+        width: 100vw; /* 1 por fila con margen */
+        margin-left: 0;
     }
 
     .content-main {
-        width: 79vw; /* 1 por fila con margen */
+        width: 88.5vw; /* 1 por fila con margen */
     }
+
 
     .plataforma-btn{
         width: 30vw;
