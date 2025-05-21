@@ -51,6 +51,14 @@ body{display: flex;}
     margin-top: -20px;
 }
 
+.emoji{
+    position: relative;
+    top: -5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+}
+
 header{
     background-color: #000;
     margin-top: 10vh;

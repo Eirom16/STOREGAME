@@ -55,13 +55,20 @@ main{
     position: relative;
     top: -4px;
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: "Cascadia Mono", sans-serif;
     text-decoration: none;
 
 }
 
-
+.emoji{
+    position: relative;
+    top: -2px;
+    height: 40px;
+    border-radius: 25px;
+    border: solid 1px #fff;
+    margin: 5px;
+}
 
 
 .caja-informacion{
