@@ -1,12 +1,12 @@
 const juegosPSP = {
 GodOfWarGhostOfSparta: {
-  titulo: "God of War III",
+  titulo: "God of War Ghost of Sparta",
   descripcion: "Kratos continúa su viaje de venganza contra los dioses del Olimpo.",
   imagen: "https://static.romspedia.com/webp/roms/god-of-war-ghost-of-sparta-psp-cover-340x483.webp",
   enlace: "https://cuty.io/ct2V17u",
   categoria: "Acción",
   plataforma: "PSP",
-  trailer: "",
+  trailer: "https://www.youtube.com/embed/xQI2hWQQCyc?si=Se6MTV36mXY1Dhp8",
 
   requisitos:  `
     <strong>Requisitos para emulador</strong>
