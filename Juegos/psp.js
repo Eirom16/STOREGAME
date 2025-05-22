@@ -14,7 +14,7 @@ GodOfWarGhostOfSparta: {
       <li>SO: Windows 10</li>
       <li>RAM: 4 GB</li>
       <li>CPU: Dual Core 2.5GHz</li>
-      <li>Emulador: PCSX2</li>
+      <li>Emulador: PPSSPP</li>
     </ul>
   `
 },
