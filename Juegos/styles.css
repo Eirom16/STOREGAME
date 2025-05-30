@@ -70,7 +70,7 @@ header{
     width: 26vw;
     background-color: #30344a;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 10px;
 }
 
@@ -362,7 +362,7 @@ footer>p{
 
 .game-download:hover{
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: none;
     text-overflow: none;
     box-sizing: border-box;
@@ -387,10 +387,6 @@ footer>p{
     border-radius:10px ;
 }
 
-.portada:hover{
-    height: 35vh;
-    width: 14.9vw;
-}
 
 .titulo-game{
     text-decoration: none;
