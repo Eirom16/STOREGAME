@@ -8,15 +8,21 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #05b8ff;
-    background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #181922;
+
 }
 
 body{display: flex;}
+
+header{
+    margin-top: 9vh;
+    margin-left: 0px;
+    height: 90vh;
+    width: 27vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
 
 .logo{
     box-sizing: border-box;
@@ -24,12 +30,12 @@ body{display: flex;}
     flex-wrap: wrap; /* Permite que el texto salte a la línea de abajo si no cabe */
     align-items: center;
     overflow: hidden; /* Opcional, evita que desborde visualmente */
-    margin: 2px 0px 2px 2px;
-    background-color: #000;
-    height: 9vh;
-    width: 99.4vw;
+    margin: 5px;
+    padding: 5px;
+    background-color: #30344a;
+    height: 8vh;
+    width: 26vw;
     position: absolute;
-    border-color: #05b8ff;
     border-radius: 10px;
 }
 
@@ -38,17 +44,16 @@ body{display: flex;}
 .logo-img{
     height: 40px;
     border-radius: 25px;
-    border: solid 1px #fff;
-    margin: 5px;
+    margin-right: 5px;
 }
 
 .logo-titulo{
     position: relative;
     top: 10px;
     color: #fff;
-    font-size: clamp(10px,4vw, 30px);
+    font-size: clamp(10px,4vw, 25px);
     font-family: "Cascadia Mono", sans-serif;
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .emoji{
@@ -59,27 +64,51 @@ body{display: flex;}
     width: 40px;
 }
 
-header{
-    background-color: #000;
-    margin-top: 10vh;
-    margin-left: 2px;
-    height: 90vh;
-    width: 27vw;
+.opciones{
+    display: flex;
+    justify-content: center;
+    width: 26vw;
+    background-color: #30344a;
+    margin-left: 5px;
+    margin-top: 5px;
     border-radius: 10px;
-    position: relative;
-    z-index: 1;
 }
 
+.opciones>button{
+    background: #30344a;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    margin-right: 2vw;
+    height: 40px;
+    width:40px;
+    color: #90acd1;
+    border: solid 2px #30344a;
+}
+
+.opciones>button>.material-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opciones{
+    width: 26vw;
+}
 
 
 .titulo-categorias{
     border-radius: 10px;
     font-family: "Cascadia Mono", sans-serif;
     text-align: center;
-    background-color: #00ffff;
+    background-color: #30344a;
+    color: #90acd1;
     font-size: 20px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
     width: 26vw;
+    padding: 15px;
 }
 
 
@@ -89,13 +118,13 @@ header{
 
 
 .categorias{
-    background-color: #000;
+    background-color: #30344a;
     position: relative;
     top:5px;
     border-radius: 10px;
-    border: solid 2px #00ffff;
     width: 26vw;
-    height: 50vh;
+    height: 71vh;
+    margin-top: 1vh;
     margin: 5px;
     overflow-y: auto;
 }
@@ -108,7 +137,7 @@ header{
     text-align: center;
     margin: 5px;
     height: 7vh;
-    width: 25vw;
+    width: 12vw;
 }
 
 .categorias>button:hover{
@@ -117,7 +146,7 @@ header{
     border-radius: 10px;
     text-align: center;
     margin: 5px;
-    width: 25vw;
+    width: 12vw;
     height: 7vh;
 }
 
@@ -128,7 +157,7 @@ header{
     border-radius: 10px;
     text-align: center;
     margin: 5px;
-    width: 25vw;
+    width: 12vw;
     height: 8vh;
 }
 
@@ -152,12 +181,12 @@ header{
 
 
 footer{
-    position: relative;
+    background-color:#30344a ;
+    position :absolute;
     top:5px;
     border-radius: 10px;
-    border: solid 2px #00ffff;
-    width: 26vw;
-    height: 32vh;
+    width: 100vw;
+    height: 20vh;
     margin: 5px;
     overflow-y: auto;
 }
@@ -169,8 +198,9 @@ footer::-webkit-scrollbar{
 footer>p{
     box-sizing: border-box;
     font-family: "Cascadia Mono", sans-serif;;
-    color: #fff;
+    color: #90acd1;
     margin: 10px;
+    font-size: small;
 }
 
 .caja-plataformas::-webkit-scrollbar{
@@ -182,16 +212,10 @@ footer>p{
     overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
-    border-top: solid 2px #00ffff;
-    border-left:solid 2px #00ffff;
-    border-right: solid 2px #00ffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 15px 18px 0 20px;
+    margin: 0px 0px 0 1.5vw;
     padding-left: 5vw;
     padding: 2px;
     display: flex;
-    background-color: #000;
 }
 
 .plataforma-btn{
@@ -200,12 +224,12 @@ footer>p{
     justify-content: center;
     align-items: center;
     background: #26DE72;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
     height: 6vh;
-    width: 25vw;
+    width: 26vw;
 }
 
 .plataforma-btn:hover{
@@ -238,29 +262,23 @@ footer>p{
 
 
 .main-content{
-    background-color: #000b;
     border-radius: 10px;
-    margin-top: 10vh;
-    margin-left: 20px;
+    margin-left: 2px;
     margin-right: 2px;
     height: 90vh;
     width: 71vw;
-    border: 2px solid #00ffff;
     position: relative;
     z-index: 1;
 }
 
 .caja-search{
-    border-bottom: solid 2px #00ffff;
-    border-left:solid 2px #00ffff;
-    border-right: solid 2px #00ffff;
+
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: 0px 18px 0 20px;
     padding-left: 5vw;
     padding: 5px ;
     display: flex;
-    background-color: #000;
 
 }
 
@@ -274,7 +292,8 @@ footer>p{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 10px;
-    border: solid 2px #fff;
+    background-color: #212433;
+    border: solid 2px #272b3d;
 }
 
 .search::placeholder{
@@ -288,10 +307,10 @@ footer>p{
     margin-left: 0;
     height: 7vh;
     width: 50px;
-    border: solid 2px #fff;
+    border: solid 2px #272b3d;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #fff;
+    background-color: #212433;
 
 }
 
@@ -306,19 +325,16 @@ footer>p{
 }
 
 .search-img{
-    position: relative;
-    left: -5px;
-    height: 40px;
-    width: 40px;
-    color: #000;
+    color: #878aa8;
 }
 
 
+
+
 .content-main{
-     background: #05b8ff;
-    background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
-    height: 65vh;
-    width: 68vw;
+     background: #181922;
+    height: 82vh;
+    width: 71vw;
     margin: 5px 20px 0 20px;
     border-radius: 10px;
     overflow: auto;
@@ -338,18 +354,15 @@ footer>p{
     text-overflow: ellipsis;
     box-sizing: border-box;
     border-radius: 10px;
-    margin: 12px;
-    height: 48vh;
-    width: 15vw;
-    border: solid 2px #fff;
-    background-color: #fff;
+    margin: 5px;
+    height: 50vh;
+    width: 20vw;
+    background-color: #30344a;
 }
 
 .game-download:hover{
     box-sizing: border-box;
     border-radius: 15px;
-    border: solid 5px #26DE72;
-    background-color: #fff;
     overflow: none;
     text-overflow: none;
     box-sizing: border-box;
@@ -366,8 +379,11 @@ footer>p{
 }
 
 .portada{
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-left: 1.5vw;
     height: 35vh;
-    width: 14.7vw;
+    width: 14vw;
     border-radius:10px ;
 }
 
@@ -378,7 +394,7 @@ footer>p{
 
 .titulo-game{
     text-decoration: none;
-    color: #000;
+    color: #90acd1;
     font-size: 15px;
     border-radius: 10px;
     margin: 5px;
@@ -388,15 +404,6 @@ footer>p{
 }
 
 
-
-.titulo-game:hover{
-    border-radius: 10px;
-    background-color: #26DE72;
-    margin: 5px;
-    text-align: center;
-    font-family: "Cascadia Mono", sans-serif;
-    
-}
 
 .enlace-titulo{
     text-decoration: none;
@@ -472,7 +479,7 @@ footer>p{
         left: -100vw;
         top: 0;
         height: 100vh;
-        width: 99.5vw;
+        width: 100vw;
         transition: left 0.3s ease-in-out;
         z-index: 1000;
     }
@@ -486,9 +493,72 @@ footer>p{
         display: none; /* ocultar el main cuando header está visible */
     }
 
+    .logo{
+    height: 8vh;
+    width: 98vw;
+}
+
+.opciones{
+    width: 98vw;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.opciones>button{
+    margin-left: 20px;
+}
+
+.logo-titulo{
+    font-size:25px ;
+}
+
+.emoji{
+    position: relative;
+    top: -4px;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+    .caja-search{
+    margin: 10vh 0px 0 0px;
+    padding-left: 5vw;
+    padding: 5px ;
+    display: flex;
+
+}
+
+.search{
+    height: 7vh;
+    width: 80vw;
+    display: flex;;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    background-color: #212433;
+    border: solid 2px #272b3d;
+}
+
+.caja-plataformas{
+    margin: 0px 0px 0 0vw;
+    padding-left: 5vw;
+    padding: 2px;
+    width: 98vw;
+}
+
     .main-content{
-        width: 99.5vw;
+        width: 100vw;
+        margin-left: 10vw;
     }
+
+    .content-main{
+     background: #181922;
+    height: 82vh;
+    width: 71vw;
+    margin: 5px 20px 0 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
 
     .filas {
         flex-wrap: wrap;
@@ -496,8 +566,8 @@ footer>p{
     }
 
     .game-download {
-        width: 41vw; /* 2 por fila con margen */
-        height: 45vh; /* Ajustar la altura según sea necesario */
+        width: 47vw; /* 2 por fila con margen */
+        height: 43vh; /* Ajustar la altura según sea necesario */
         margin: 5px; /* Espacio entre los elementos */
     }
 
@@ -509,7 +579,7 @@ footer>p{
     }
 
     .portada {
-        width: 40vw; /* 2 por fila con margen */
+        width: 44.5vw; /* 2 por fila con margen */
         height: 30vh; /* Ajustar la altura según sea necesario */
     }
 
@@ -524,7 +594,8 @@ footer>p{
     }
 
     .content-main {
-        width: 88.5vw; /* 1 por fila con margen */
+        width: 100vw; /* 1 por fila con margen */
+        margin: 0;
     }
 
 
@@ -548,18 +619,18 @@ footer>p{
     text-align: center;
     font-size: 20px;
     margin: 5px;
-    width: 97vw;
+    width: 98vw;
+    padding: 15px;
 }
+
 
 
     .categorias{
     position: relative;
-    top:5px;
     border-radius: 10px;
-    border: solid 2px #00ffff;
-    width: 97vw;
-    height: 50vh;
-    margin: 5px;
+    width: 58vw;
+    height: 90vh;
+    margin: 0px;
     overflow-y: auto;
 }
 
@@ -570,8 +641,7 @@ footer>p{
     text-align: center;
     margin: 5px;
     height: 7vh;
-    width: 44vw;
-    border-color: #fff;
+    width: 55vw;
 }
 
 .categorias>button:hover{
@@ -580,7 +650,7 @@ footer>p{
     border-radius: 10px;
     text-align: center;
     margin: 5px;
-    width: 44vw;
+    width: 55vw;
     height: 7vh;
 }
 
@@ -590,20 +660,28 @@ footer>p{
     border-radius: 10px;
     text-align: center;
     margin: 5px;
-    width: 44vw;
+    width: 55vw;
     height: 7vh;
 }
 
 
 footer{
     position: relative;
-    top:5px;
-    border-radius: 10px;
-    border: solid 2px #00ffff;
-    width: 97vw;
-    height: 32vh;
-    margin: 5px;
+    margin-left: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100vw;
+    height: 30vh;
     overflow-y: auto;
+    margin: 0px;
+}
+
+footer>p{
+    box-sizing: border-box;
+    font-family: "Cascadia Mono", sans-serif;
+    color: #90acd1;
+    margin: 10px;
+    font-size: 20px;
 }
 
 .search::placeholder{

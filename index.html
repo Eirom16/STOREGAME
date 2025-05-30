@@ -12,18 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2026246451666229"
      crossorigin="anonymous"></script>
      <meta name="google-site-verification" content="KxHw9AOQny5UosILErBHvgpsmbcd8QU9pSvFcQ1XisA" />
 </head>
 <body>
-  <div class="logo"> 
+              <div class="logo"> 
                   <img src="iconos/STOREGAMES.png" class="logo-img">
                   <h1 class="logo-titulo">RETRO STOREGAMES <span class="emoji">🎮</span></h1> 
                 </div>
      <header>
             <div>
-                
+                <div class="opciones">
+                  <button><i class="material-icons">person</i></button>
+                  <button><i class="material-icons">sunny</i></button>              
+                  <button><i class="material-icons">help</i></button>
+                  <button><i class="material-icons">info</i></button>
+                </div>
                 <h2 class="titulo-categorias">Filtrar por categorias</h2>
                 <div class="caja-categorias">
                     <div class="categorias">
@@ -41,17 +47,25 @@
                             <button data-categoria="Lucha" class="categoria-btn"><li class="categorias-contenido"><h3>Lucha</h3></li></button> 
                             <button data-categoria="Puzzle" class="categoria-btn"><li class="categorias-contenido"><h3>Puzzle</h3></li></button> 
                             <button data-categoria="Supervivencia" class="categoria-btn"><li class="categorias-contenido"><h3>Supervivencia</h3></li></button> 
+                            <button data-categoria="Deportes" class="categoria-btn"><li class="categorias-contenido"><h3>Deportes</h3></li></button>
+                            <button data-categoria="Terror" class="categoria-btn"><li class="categorias-contenido"><h3>Terror</h3></li></button>
+                            <button data-categoria="Educativos" class="categoria-btn"><li class="categorias-contenido"><h3>Educativos</h3></li></button>
+                            <button data-categoria="Multijugador" class="categoria-btn"><li class="categorias-contenido"><h3>Multijugador</h3></li></button>
+                            <button data-categoria="Gráficos" class="categoria-btn"><li class="categorias-contenido"><h3>Gráficos</h3></li></button>
+                            <button data-categoria="Realismo" class="categoria-btn"><li class="categorias-contenido"><h3>Realismo</h3></li></button>
 
                              
                     </div>
                 </div>
-                <footer>
-                  <p>&copy; 2024 EIROM.DEV. Todos los derechos reservados.</p>
-                  <p>El contenido disponible en este sitio pertenece a terceros. EIROM.DEV no se responsabiliza por el uso, acceso, distribución o consecuencias derivadas del uso de archivos, enlaces o cualquier otro contenido proporcionado por terceros. Recomendamos verificar la autenticidad y seguridad de dichos recursos antes de utilizarlos.</p>
-                </footer>
+               
             </div>
      </header>
      <main>
+       <div class="caja-search">
+               <input type="text" class="search" id="searchBar" placeholder="Buscar juegos...">
+               <button class=" search-bottom" id="searchButton"><i class="material-icons search-img">search</i></button>
+               
+            </div>
         <div class="main-content">
           <div class="caja-plataformas">
             <button data-plataforma="Todos" class="plataforma-btn"><li class="plataformas-contenido"><h3>Todos</h3></li></button>
@@ -64,17 +78,19 @@
             <button data-plataforma="NDS" class="plataforma-btn"><li class="plataformas-contenido"><h3>NDS</h3></li></button>
 
      </div>
-            <div class="caja-search">
-               <input type="text" class="search" id="searchBar" placeholder="Buscar juegos...">
-               <button class="search-bottom" id="searchButton"><img src="iconos/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="search-img"></button>
-            </div>
+        
             <div class="content-main">
                 
             </div>
+
             
         </div>
         </div>
+
+        
      </main>
+
+
       <script src="Juegos/pc.js"></script>
       <script src="Juegos/Android.js"></script>
       <script src="Juegos/nds.js"></script>
