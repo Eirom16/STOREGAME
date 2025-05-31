@@ -74,7 +74,7 @@ header{
     border-radius: 10px;
 }
 
-.opciones>button{
+.opciones>a>button{
     background: #30344a;
     border-radius: 50%;
     text-align: center;

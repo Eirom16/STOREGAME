@@ -78,7 +78,11 @@ function mostrarJuegos() {
   contenedor.innerHTML = "";
 
   const juegosFiltrados = Object.entries(juegos).filter(([id, juego]) => {
-    const coincideCategoria = filtroCategoria === "Todos" || juego.categoria === filtroCategoria;
+    const coincideCategoria = filtroCategoria === "Todos" || (
+  Array.isArray(juego.categoria)
+    ? juego.categoria.includes(filtroCategoria)
+    : juego.categoria === filtroCategoria
+);
     const coincidePlataforma = filtroPlataforma === "Todos" || juego.plataforma === filtroPlataforma;
     return coincideCategoria && coincidePlataforma;
   });

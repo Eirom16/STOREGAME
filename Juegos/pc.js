@@ -66,7 +66,7 @@ hollowKnight: {
   descripcion: "Hollow Knight es un juego de acción y aventuras en 2D desarrollado por Team Cherry. Ambientado en un mundo subterráneo llamado Hallownest, el jugador explora vastas cavernas, combate enemigos y descubre secretos en una aventura estilo metroidvania con un estilo artístico dibujado a mano.",
   imagen: "https://www.gamestorrents.app/wp-content/uploads/2018/04/HOLLOW-.jpg",
   enlace: "https://cuty.io/wHyKIJ",
-  categoria: "Aventura",
+  categoria: ["Aventura", "Plataformas", "Indie"],
   trailer: "https://www.youtube.com/embed/nSPJXlYjENE?si=m2vh42v4mLAKoSSQ",
   plataforma: "PC",
   requisitos:  `

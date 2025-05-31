@@ -2,12 +2,8 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #05b8ff;
-    background: linear-gradient(180deg, rgba(5, 184, 255, 1) 66%, rgba(38, 222, 114, 1) 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #181922;
+
 }
 
 main{
@@ -22,23 +18,13 @@ main{
     height: 60px;
     box-sizing: border-box;
     display: flex;
-    background-color: #000;
+    background-color: #30344a;
     border-radius: 10px;
     border: solid 2px #000;
     text-decoration: none;
 }
 
-.logo:hover{
-    margin: auto;
-    margin-top: 5px;
-    width: 80vw;
-    height: 60px;
-    box-sizing: border-box;
-    display: flex;
-    background-color: #26DE72;
-    border-radius: 10px;
-    border: solid 2px #000;
-}
+
 
 
 
@@ -61,17 +47,51 @@ main{
 
 }
 
+.opciones{
+    display: flex;
+    justify-content: center;
+    width: 26vw;
+    border-radius: 10px;
+    position: absolute;
+    right: 4vw;
+}
 
+.opciones>button{
+    background: #30344a;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    margin-right: 2vw;
+    height: 40px;
+    width:40px;
+    color: #90acd1;
+    border: solid 2px #30344a;
+}
+
+.opciones>button:hover{
+
+   background: #26DE72;
+}
+
+.opciones>button>.material-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opciones{
+    width: 26vw;
+}
 
 .caja-informacion{
-    border: solid 2px #00ffff;
     overflow: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: auto;
     margin-top: 1vh;
     height: 80vh;
     width: 30vw;
-    background-color: #111b;
+    background-color: #30344a;
 }
 
 .caja-informacion::-webkit-scrollbar{
@@ -131,20 +151,19 @@ main{
 .descripcion{
     box-sizing: border-box;
     font-family: "Cascadia Mono", sans-serif;
-    color: #fff;
+    color: #90acd1;
     margin: 10px;
 }
 
 .caja-requisitos{
     overflow-y: auto;
-    border: solid 2px #00ffff;
     display: flex;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: auto;
     margin-top: 1vh;
     height: 80vh;
     width: 30vw;
-    background-color: #111b;
+    background-color: #30344a;
 
 }
 
@@ -163,14 +182,14 @@ main{
     text-align: center;
     margin-left: 1vw;
     margin-right: 1vw;
-    width: 28vw;
+    
 }
 
 
 .requisitos{
     box-sizing: border-box;
     font-family: "Cascadia Mono", sans-serif;
-    color: #fff;
+    color: #90acd1;
     margin: 10px;
 }
 
@@ -184,13 +203,12 @@ span{
 
 .caja-trailer{
     text-align: center;
-    border: solid 2px #00ffff;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: auto;
     margin-top: 1vh;
     height: 80vh;
     width: 30vw;
-    background-color: #111b;
+    background-color: #30344a;
 }
 
 .trailer-titulo{
@@ -207,24 +225,28 @@ span{
 
 .caja--trailer{
     text-align: center;
-    border: solid 2px #00ffff;
     border-radius: 10px;
     margin: auto;
-    margin-top: 1vh;
-    height: 72vh;
-    width: 28vw;
+    margin-top: 14vh;
+    height: 42vh;
+    width: 29vw;
     background-color: #1118;
 }
 
 #trailer{
     border-radius: 10px;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 1vh;
     height: 40vh;
-    width: 27vw;
+    width: 28vw;
 }
 
 @media (max-width: 768px) {
+
+  .logo {
+    width: 100vw;
+}
+
   main {
     display: flex;
     flex-direction: column;
