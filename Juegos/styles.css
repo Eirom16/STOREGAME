@@ -80,10 +80,22 @@ header{
     text-align: center;
     margin: 5px;
     margin-right: 2vw;
+    padding: 6px;
     height: 40px;
-    width:40px;
+    width: 40px;
     color: #90acd1;
     border: solid 2px #30344a;
+}
+
+.opciones>a>button:hover{
+    background: #90acd1;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    margin-right: 2vw;
+    height: 40px;
+    width:40px;
+    color: #30344a;
 }
 
 .opciones>button>.material-icons{
@@ -91,6 +103,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 
 
 .opciones{
@@ -496,12 +509,20 @@ footer>p{
 
 .opciones{
     width: 98vw;
+    height: 6vh;
     margin-left: 5px;
     margin-top: 2px;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-.opciones>button{
-    margin-left: 20px;
+.opciones>a>button{
+    margin-left: 25.25px;
+    margin-right: 25.25px;
+    padding: 6px;
 }
 
 .logo-titulo{
@@ -610,23 +631,31 @@ footer>p{
 
 
     .titulo-categorias{
-    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     font-family: "Cascadia Mono", sans-serif;
     text-align: center;
     font-size: 20px;
-    margin: 5px;
+    margin: 0px 5px 0 5px;
     width: 98vw;
-    padding: 15px;
+    height: 8vh;
 }
 
-
+   
 
     .categorias{
     position: relative;
-    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 58vw;
-    height: 90vh;
+    height: 80vh;
     margin: 0px;
+    margin-left: 5px;
+    margin-top: -1vh;
     overflow-y: auto;
 }
 

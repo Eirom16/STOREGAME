@@ -3,6 +3,7 @@ body{
     padding: 0;
     min-height: 100vh;
     background: #181922;
+    overflow: hidden;
 
 }
 
@@ -70,7 +71,8 @@ main{
 
 .opciones>button:hover{
 
-   background: #26DE72;
+   background: #90acd1;
+   color: #30344a;
 }
 
 .opciones>button>.material-icons{
@@ -242,6 +244,11 @@ span{
 }
 
 @media (max-width: 768px) {
+
+    body {
+        background: #181922;
+        overflow: auto;
+    }
 
   .logo {
     width: 100vw;
